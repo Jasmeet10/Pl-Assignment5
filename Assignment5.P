@@ -1,13 +1,10 @@
-%Question-1
+%Question-3
 
-maxodd([],0).
-maxodd([X],X).
-maxodd([X,_|Xs], Res) :-
-	maxodd(Xs, Res1),
-	(   
-      X > Res1 -> Res is X;
-      Res is Res1
-    ).
+replace_first([],X,Y,[]).
+replace_first([X|Xs],K,N,L):-
+	X == K -> L=[N|Xs];
+	replace_first(Xs,K,N,L1),
+	L = [X|L1].
 	
 
 	
