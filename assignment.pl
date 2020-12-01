@@ -7,6 +7,14 @@ maxodd([X,_|Xs], Res) :-
       X > Res1 -> Res is X;
       Res is Res1
     ).
+    
+%Question2
+deleteNList(N,L,Res) :- 
+	deleteNList(N,1,L,Res).
+
+deleteNList(_,_,[],[]).
+deleteNList(N,N,[_|T],T1) :- !, deleteNList(N,1,T,T1).
+deleteNList(X,N,[H|T],[H|T1]) :- N<X, N1 is N+1, deleteNList(X,N1,T,T1).
 
 %Question3
 replace_first([],X,Y,[]).
