@@ -1,9 +1,9 @@
 %Question-3
 
-replace_first([],X,N,[]).
-replace_first([X|Xs],K,N,L):-
-	X == K -> L=[N|Xs];
-	replace_first(Xs,K,N,L1),
+replace_first([],X,Y,[]).
+replace_first([X|Xs],T,N,L):-
+	X == T -> L=[N|Xs];
+	replace_first(Xs,T,N,L1),
 	L = [X|L1].
 	
 
