@@ -10,5 +10,7 @@ Karina Grullon - B#(B00698337) EmailID: mgrullo1@binghamton.edu
 Instruction to run:
 
 1. use swi-prolog to run the program.
+2. use each code separately.
+3. file name with the extension of .pl
 
 -- Code was tested on remote.cs.binghamton.edu
